@@ -1,0 +1,525 @@
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bg-grey {
+  background: #f7f7f7;
+}
+
+body {
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  color: #495057;
+  letter-spacing: -0.5px;
+}
+i {
+  font-style: normal;
+}
+section > .container {
+  padding: 30px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+p,
+span {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5em;
+}
+.grid > * {
+  padding: 16px;
+}
+
+/* -------------------- o0o BANNER o0o ----------------- */
+#banner {
+  height: 50vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    url("../images/banner.jpg");
+  background-size: cover;
+
+  /* flex */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+/* text over img */
+.banner-text {
+  position: absolute;
+  transform: translate(0, 50%);
+  text-align: center;
+  color: #fff;
+}
+
+/* h1 over banner */
+.banner-text h1 {
+  font-size: 36px;
+  font-weight: 400;
+}
+
+/* -------------------- o0o NAV-BAR o0o ----------------- */
+#nav-bar {
+  text-align: center;
+}
+/* cotainer of nav bar */
+#nav-bar .container {
+  padding: 0;
+
+  /* flex: to place the elements side by side */
+  /* display: flex; */
+  justify-content: center;
+}
+
+/* The div contain the name or the picture - advance section - in the middle of nav bar */
+.nav-bar-name {
+  width: 300px;
+  /* This div is a parent of the avatar */
+  position: relative;
+
+  /* flex to center the element in side the div */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-bar-name img {
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+  transform: scale(1.5);
+  border-radius: 50%;
+  border: 8px solid #fff;
+}
+
+/* style the Name in nav-bar (without advance section) */
+.nav-bar-name h2 {
+  font-weight: 400;
+}
+
+/* small text under h2 */
+.nav-bar-name p {
+  color: #adb5bd;
+}
+
+/* the icons in nav bar */
+#nav-bar i {
+  color: #199edd;
+}
+
+/* style border property for nav bar */
+.nav-bar-name,
+#nav-bar a {
+  border: 1px solid rgba(219, 228, 255, 0.516);
+  border-collapse: collapse;
+}
+
+/* style the link in nav bar */
+#nav-bar a {
+  color: #495057;
+  padding: 14px 28px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* 2 kinds of grid */
+/* two columns */
+/* .container.two-columns-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+} */
+/* three columns */
+/* .container.three-columns-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+} */
+
+/* -------------------- o0o ABOUT o0o ----------------- */
+#about h1 {
+  margin-bottom: 38px;
+}
+/*The grid's axis is between the target and personal-info section */
+#target {
+  padding: 30px;
+  /* padding-left: 0; */
+  /* Justify end to align the target cell to the left of the grid's axis */
+  justify-self: end;
+}
+
+#personal-info {
+  width: 100%;
+  background-color: #e9ecef;
+  padding: 30px;
+  /* Justify end to align the target cell to the left of the grid's axis */
+  justify-self: start;
+}
+
+#personal-info ul {
+  list-style-type: none;
+}
+
+.personal-info-icon {
+  color: #4dabf7;
+  margin-top: 20px;
+}
+
+/* -------------------- o0o JOB o0o ----------------- */
+/* cell of grid */
+.job-info-cell {
+  /* padding: 50px 10px; */
+  border: 1px solid #dbe4ff;
+  /* grid */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  /* devide grid in to 2 row */
+  grid-template-rows: 50px auto;
+  /* align all element in one cell vertically */
+  align-items: start;
+  row-gap: 40px;
+}
+
+.job-info-cell h1 {
+  font-size: 28px;
+  font-weight: 500;
+  /* to align h1 and icon on one line */
+  align-self: end;
+  padding-left: 10px;
+}
+
+.job-info-cell-icon {
+  font-size: 40px;
+  /* to align h1 and icon on one line */
+  align-self: end;
+}
+
+/* The text contain all column in one cell */
+.job-info-cell-text {
+  grid-column: 1 / -1;
+  flex-direction: column;
+}
+
+/* style li items in job section */
+.job-info-cell li::marker {
+  font-size: 32px;
+  color: #199cdb;
+}
+
+.job-info-cell li {
+  margin-bottom: 20px;
+  /* margin-left: 20px; */
+}
+
+/* style the year */
+.job-info-year p {
+  font-style: italic;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* style the "Hiện tại" paragraph */
+#present {
+  width: 80px;
+  padding: 0 5px;
+  text-align: center;
+  color: #fff;
+  background-color: #199cdb;
+  border-radius: 20px;
+}
+
+/* The hobby cell in job section */
+/* hobby cell has 4 columns in text cell */
+.columns-content {
+  display: grid;
+  font-size: 10px;
+  justify-items: center;
+  align-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  flex: 1 0 auto;
+}
+
+/* style the icons and the ground border of icons 
+in hobby cell */
+.columns-content i {
+  width: 50px;
+  height: 50px;
+  color: #78c4ea;
+  font-size: 24px;
+  font-weight: 700;
+  border: 2px solid #78c4ea;
+  border-radius: 50%;
+
+  /* to placed the icon in the middle inside the border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* add score bar too language cell and skill cell */
+.score-bar {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+/* -------------------- o0o CERTIFICATE o0o ----------------- */
+/* #certificate .section-title {
+  grid-column: 1 / -1;
+} */
+
+/* #certificate img {
+  height: 100px;
+  width: auto;
+  flex: 0 0 auto;
+  transform: scale(1);
+} */
+/* # img {
+  height: 100px;
+} */
+/* display flex the cell */
+.certificate-cell {
+  padding: 20px 20px;
+  padding-left: 0;
+  /* display: flex; */
+}
+
+/* #certificate .row > *:first-child {
+  border-right: 1px solid #d6c08d;
+} */
+/* this cell has right border*/
+
+/* .certificate-cell:first-child {
+  border-right: 1px solid #d6c08d;
+} */
+/* .right-border-cell {
+  border-right: 1px solid #d6c08d;
+} */
+
+/* this cell has top border*/
+/* .top-border-cell {
+  grid-column: 1 / -1;
+  border-top: 1px solid #d6c08d;
+} */
+
+.certificate-cell:first-child,
+.certificate-cell:nth-child(2) {
+  border-top: none;
+}
+.certificate-cell {
+  border-top: 1px solid #d6c08d;
+}
+/* certificate-description - the text of cell */
+.certificate-desc {
+  /* width: 60%; */
+  /* flex: 0 0 auto; */
+  font-size: 16px;
+  padding-left: 20px;
+}
+/* style the certificate-name */
+.certificate-name {
+  font-size: 18;
+  text-transform: uppercase;
+}
+
+/* -------------------- o0o PROJECT o0o ----------------- */
+
+#project .section-title {
+  grid-column: 1 / -1;
+}
+/* create container - project cell - contain img and the other divs
+-- change in to column direction 
+-- in order to concatenate the left and bottom border */
+.project-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+/* style the img  */
+#project img {
+  width: 100%;
+  height: auto;
+}
+
+/* Flex grow project cover 
+-- to create border cover the divs under the img */
+.project-cover {
+  border: 1px solid #dbe4ff;
+  flex-grow: 1;
+}
+
+/* style the project name */
+.project-name {
+  padding: 20px 0;
+  padding-left: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  /* this border is darker than others */
+  border-bottom: 1px solid #bac8ff;
+}
+
+.project-name p {
+  font-weight: 500;
+}
+
+/* style the project year */
+.project-year p {
+  text-align: center;
+  /* width: 100%; */
+  padding: 0 5px;
+  border-radius: 20px;
+  background-color: #199cdb;
+  color: #fff;
+}
+
+/* style the text */
+.overview-icon-text p {
+  /* width: 100%; */
+  display: inline-block;
+}
+.temp {
+  width: 100%;
+}
+/* style the table header and table data */
+th,
+td {
+  text-align: left;
+  vertical-align: text-top;
+  padding-left: 0;
+  border-top: 1px solid #bac8ff;
+}
+
+th {
+  font-weight: 400;
+  width: 32%;
+  padding: 10px;
+
+  padding: 10px 0;
+  padding-left: 10px;
+  padding-right: 0;
+}
+
+td {
+  line-height: 2;
+  width: auto;
+  /* padding-left: 0; */
+}
+
+/* -------------------- o0o FOOTER o0o ----------------- */
+#footer {
+  text-align: center;
+}
+
+#footer ul {
+  list-style-type: none;
+}
+
+/* display inline block to set the elements side by side */
+#footer li {
+  margin-right: 30px;
+  display: inline-block;
+  font-size: 18px;
+}
+/* style the footer icon */
+#footer i {
+  /* color: #199cdb; */
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #199cdb;
+  color: #fff;
+}
+
+/* the github icon is differnt from others */
+#footer #git-icon {
+  padding: 0;
+  color: #199cdb;
+  background-color: #fff;
+}
+
+#footer #git-icon::before {
+  height: 18px;
+  width: 18px;
+  transform: scale(2);
+}
+
+/* charter */
+.charter h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+.charter p {
+  font-size: 14px;
+  margin: 0;
+}
+/* style the icons in charter */
+.chart-icon {
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* the circle including number */
+.numbering {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: #9e88ff;
+  color: #fff;
+}
+.numbering p {
+  font-size: 18px;
+}
+.charter .container {
+  background-color: #0000ff;
+}
+/* icon people */
+.people {
+  width: 24px;
+  height: 24px;
+}
+
+.timeline .row > div:first-child,
+.timeline .row > div:nth-child(2) {
+  margin-top: 0.5em;
+}
+.timeline .row > div {
+  margin-top: 1em;
+}
+
+.timeline .chart-icon {
+  padding-top: 0;
+}
+/* the border bottom of some part in one card */
+.timeline .row > div:nth-child(even) {
+  border-bottom: 3px dotted rgba(0, 255, 255, 0.3);
+}

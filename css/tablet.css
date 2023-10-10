@@ -1,0 +1,32 @@
+@media (max-width: 769px) {
+  /* To disable te picture in nav */
+  .nav-bar-name {
+    display: none;
+  }
+  /* the yellow border in certificate card */
+  .certificate-cell:first-child img {
+    border-right: 1px solid #d6c08d;
+  }
+  .charter p {
+    font-size: 18px;
+  }
+  .numbering {
+    height: 40px;
+    width: 40px;
+  }
+}
+@media (min-width: 576px) {
+  .job-info-cell h1 {
+    font-size: 24px;
+  }
+  .job-info-cell {
+    height: 100%;
+  }
+  /* the yellow border in certificate card */
+  .certificate-cell:first-child div:nth-child(2) {
+    border-right: 1px solid #d6c08d;
+  }
+  .project-overview {
+    padding: 0 10px;
+  }
+}

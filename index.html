@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- choose the font style -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:ital,wght@0,500;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap css style -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Assignment 03</title>
+  </head>
+  <body>
+    <!-- -------------------- o0o BANNER o0o ----------------->
+    <div id="banner" style="padding: 50px 50px">
+      <!-- <div class="container"> -->
+      <!-- add div for text over banner
+          in order to modify -->
+      <div class="banner-text">
+        <h1>Nguyễn Hoàng Long</h1>
+        <span>Full Stack Developer</span>
+      </div>
+      <!-- </div> -->
+    </div>
+    <!-- -------------------- o0o NAV-BAR o0o ----------------->
+    <section id="nav-bar">
+      <nav class="container">
+        <div class="row">
+          <a href="charter.html" class="col-sm-3 col-md">
+            <i class="icon-user"></i>
+            Thông tin
+          </a>
+          <a href="charter.html" class="col-sm-3 col-md"
+            ><i class="icon-doc-text-inv"></i>Lý lịch</a
+          >
+          <!-- The div contain the name or the picture - advance section - in the middle of nav bar -->
+          <div class="nav-bar-name col-md-2">
+            <!-- <h2>Nguyễn Hoàng Long</h2>
+          <p>Full Stack Developer</p> -->
+            <!-- ADVANCE -->
+            <img src="images/self_avatar.png" alt="" />
+          </div>
+          <a href="charter.html" class="col-sm-3 col-md"
+            ><i class="icon-mail-alt"></i>Chứng chỉ</a
+          >
+          <a href="charter.html" class="col-sm-3 col-md"
+            ><i class="icon-star-1"></i>Dự Án</a
+          >
+        </div>
+      </nav>
+    </section>
+
+    <!-- -------------------- o0o ABOUT o0o ----------------->
+    <section id="about" class="bg-grey">
+      <div class="container">
+        <div class="row">
+          <div id="target" class="col-md">
+            <h1 class="section-title">Mục tiêu nghề nghiệp</h1>
+            <p>
+              Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+              của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí
+              <b>Fullstack Developer</b>, có thể vận dụng những kiến thức đã
+              được trau dồi và không ngừng học hỏi để phát triển bản thân, cũng
+              như hoàn thành tốt nhất công việc được giao.
+            </p>
+          </div>
+          <div id="personal-info" class="col-md">
+            <h1 class="section-title">Thông tin cá nhân</h1>
+            <ul>
+              <li>
+                <span><strong>Giới tính</strong></span> : Nam
+              </li>
+              <li>
+                <span><strong>Ngày sinh</strong></span> : 18/11/2003
+              </li>
+              <li>
+                <span><strong>Điện thoại</strong></span> : (+84) 97748xxx
+              </li>
+              <li>
+                <span><strong>Email</strong></span> :
+                nguyenhoanglongk14@siu.edu.vn
+              </li>
+              <li>
+                <span><strong>Địa chỉ</strong></span> : Nguyễn Thị Định, TP Thủ
+                Đức, TP-HCM
+              </li>
+              <li>
+                <span><strong>Website</strong></span> : https://abc.tech
+              </li>
+            </ul>
+            <div class="personal-info-icon">
+              <i class="icon-twitter"></i>
+              <i class="icon-facebook"></i>
+              <i class="icon-gplus"></i>
+              <i class="icon-linkedin"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------- o0o JOB o0o ----------------->
+    <!-- EXPERIENCE -->
+    <section id="job-info">
+      <!-- this section has three columns grid -->
+      <div class="container">
+        <div class="row g-4">
+          <!-- One cell of grid -->
+          <div class="col-sm-6 col-md-4">
+            <div class="job-info-cell" style="margin-top: 20px">
+              <h1>Kinh nghiệm</h1>
+              <div class="job-info-cell-icon">
+                <i class="ic-toolbox"></i>
+              </div>
+              <!-- The text in the cell - under the title -->
+              <div class="job-info-cell-text">
+                <ul>
+                  <!-- item1 -->
+                  <li>
+                    <p><strong>Công ty Y</strong></p>
+                    <!-- style the year in cell -->
+                    <div class="job-info-year">
+                      <p>06/2022 -</p>
+                      <!-- style the "Hiện tại" paragraph -->
+                      <p id="present">Hiện tại</p>
+                    </div>
+                    <p>- Full Stack Developer</p>
+                    <p>
+                      - Xây dựng, phát triển Website dựa trên thiết kế và yêu
+                      cầu đã có.
+                    </p>
+                    <p>
+                      - Phân tích và thiết kế Database, sử dụng các hệ quản trị
+                      CSDL (MYSQL, SQLSever,NoSQL, ...) và viết được các câu
+                      truy vấn.
+                    </p>
+                    <p>
+                      - Sử dụng ngôn ngữ sever-side (Python, Java, ...) để xây
+                      dựng các Web Service.
+                    </p>
+                  </li>
+
+                  <!--item2-->
+                  <li>
+                    <p><strong>Công ty FPTSoftware Academy</strong></p>
+                    <div class="job-info-year">
+                      <p>06/2023 - Hiện tại</p>
+                    </div>
+                    <p>- .Net Developer</p>
+                    <p>
+                      - Thiết kế, xây dựng ứng dụng dưa trên yêu cầu của khách
+                      hàng.
+                    </p>
+                    <p>
+                      - Sử dụng các công cụ: .Net framework, SQL Sever
+                      Management.
+                    </p>
+                    <p>- Sử dụng ngôn ngữ C# để xây dụng các ứng dụng.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- EDUCATION -->
+          <!-- this cell is as same structure as the EXPERIENCE cell-->
+          <div class="col-sm-6 col-md-4">
+            <div class="job-info-cell" style="margin-top: 20px">
+              <h1>Học vấn</h1>
+              <div class="job-info-cell-icon"><i class="ic-pencil"></i></div>
+              <div class="job-info-cell-text">
+                <ul>
+                  <!--item1-->
+                  <li>
+                    <p><strong>FUNIX</strong></p>
+                    <div class="job-info-year">
+                      <p>08/2023-04/2024</p>
+                    </div>
+                    <p>- Tốt nghiệp chứng chỉ doanh nghiệp Fullstack</p>
+                    <p>- GPA: 9/10</p>
+                  </li>
+
+                  <!--item2-->
+                  <li>
+                    <p>
+                      <strong>Cử nhân - Đại học Quốc tế Sài Gòn - SIU</strong>
+                    </p>
+                    <div class="job-info-year">
+                      <p>08/2021-10/2025</p>
+                    </div>
+                    <p>- Chuyên ngành: Trí tuệ nhân tạo</p>
+                    <p>- GPA: 3.2/4.0</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- ACTIVITY -->
+          <!-- this cell is as same structure as the EXPERIENCE cell-->
+          <div class="col-sm-6 col-md-4">
+            <div class="job-info-cell" style="margin-top: 20px">
+              <h1>Hoạt động</h1>
+              <div class="job-info-cell-icon">
+                <i class="ic-toolbox"></i>
+              </div>
+              <div class="job-info-cell-text">
+                <ul>
+                  <li>
+                    <p><strong>ICPC 2022</strong></p>
+                    <div class="job-info-year">
+                      <p>03/2022 - 04/2022</p>
+                    </div>
+                    <p>- Tham gia thi Code và giải thuật.</p>
+                  </li>
+                  <li>
+                    <p><strong>Câu lạc bộ trí tuệ nhân tạo</strong></p>
+                    <div class="job-info-year">
+                      <p>06/2021 - 08/2023</p>
+                    </div>
+                    <p>- Tham gia nghiên cứu về AI.</p>
+                  </li>
+                  <li>
+                    <p><strong>Câu lạc bộ tin học ứng dụng</strong></p>
+                    <div class="job-info-year">
+                      <p>06/2021 - 08/2023</p>
+                    </div>
+                    <p>
+                      - Ôn luyện nâng cao kỹ năng thực hành tin học ứng dụng và
+                      thi các chứng chỉ MOS.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- HOBBY -->
+          <div class="col-sm-6 col-md-4">
+            <div class="job-info-cell" style="margin-top: 20px">
+              <h1>Sở thích</h1>
+              <div class="job-info-cell-icon">
+                <i class="ic-telescope"></i>
+              </div>
+              <!-- hobby cell has 4 columns in text cell -->
+              <!-- Display grid this container -->
+              <div class="job-info-cell-text columns-content">
+                <!-- row 1 -->
+                <i class="ic-megaphone"></i>
+                <i class="ic-hotairballoon"></i>
+                <i class="ic-strategy"></i>
+                <i class="ic-basket"></i>
+                <!-- row 2 -->
+                <p>Âm nhạc</p>
+                <p>Du lịch</p>
+                <p>Chơi game</p>
+                <p>Nấu ăn</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- LANGUAGE -->
+          <div class="col-sm-6 col-md-4">
+            <div class="job-info-cell" style="margin-top: 20px">
+              <h1>Ngôn ngữ</h1>
+              <div class="job-info-cell-icon">
+                <i class="ic-mic"></i>
+              </div>
+              <div class="job-info-cell-text">
+                <p>English - Toeic 650</p>
+                <!-- score bar -->
+                <span class="score-bar"></span>
+                <span class="score-bar"></span>
+                <span class="score-bar"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- SKILL -->
+          <!-- this cell is as same structure as the LANGUAGE cell-->
+          <div class="col-sm-6 col-md-4">
+            <div class="job-info-cell" style="margin-top: 20px">
+              <h1>Kỹ năng</h1>
+              <div class="job-info-cell-icon">
+                <i class="ic-telescope"></i>
+              </div>
+              <div class="job-info-cell-text">
+                <p>HTML/CSS</p>
+                <span class="score-bar"></span>
+                <span class="score-bar"></span>
+                <span class="score-bar"></span>
+                <p>Javascript</p>
+                <span class="score-bar"></span>
+                <span class="score-bar"></span>
+                <span class="score-bar"></span>
+                <p>PYTHON</p>
+                <span class="score-bar"></span>
+                <span class="score-bar"></span>
+                <span class="score-bar"></span>
+                <p>SQL</p>
+                <span class="score-bar"></span>
+                <span class="score-bar"></span>
+                <span class="score-bar"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------- o0o CERTIFICATE o0o ----------------->
+    <section id="certificate" class="bg-grey">
+      <!-- this section has two columns grid -->
+      <div class="container">
+        <h1 class="section-title">Chứng chỉ - Giải thưởng</h1>
+        <div class="row">
+          <!-- display flex the cell -->
+          <div class="certificate-cell row col-sm-6">
+            <!-- <div class="cert-img col-sm-4"> -->
+            <img
+              class="col-md-4 img-fluid"
+              src="images/Cert_DBI.png"
+              alt="DBI"
+            />
+            <!-- </div> -->
+
+            <!-- certificate-description - the text of cell
+            ---- this cell has right border -->
+            <div class="certificate-desc col-md-8">
+              <!-- style the certificate-name -->
+              <p class="certificate-name">
+                <strong>chứng chỉ lập trình web - funix</strong>
+              </p>
+              <p>- Chứng chỉ thuộc chương trình CCDN</p>
+              <p>- GPA: 8.6</p>
+            </div>
+          </div>
+
+          <!-- this cell is as same structure as the EXPERIENCE cell-->
+          <div class="certificate-cell row col-sm-6">
+            <img
+              class="col-md-4 img-fluid"
+              src="images/Cert_PRF.png"
+              alt="PRF"
+            />
+
+            <div class="certificate-desc col-md-8">
+              <p class="certificate-name">
+                <strong>chứng chỉ lập trình web - funix</strong>
+              </p>
+              <p>- Chứng chỉ thuộc chương trình CCDN</p>
+              <p>- GPA: 8.6</p>
+            </div>
+          </div>
+
+          <!-- this cell is as same structure as the EXPERIENCE cell-->
+          <div class="certificate-cell row col-sm-6">
+            <!-- <div class="cert-img col-sm-4"> -->
+            <img
+              class="col-md-4 img-fluid"
+              src="images/Cert_WEB.png"
+              alt="WEB"
+            />
+            <!-- </div> -->
+            <div class="certificate-desc col-md-8">
+              <p class="certificate-name">
+                <strong>chứng chỉ lập trình web - funix</strong>
+              </p>
+              <p>- Chứng chỉ thuộc chương trình CCDN</p>
+              <p>- GPA: 8.6</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------- o0o PROJECT o0o ----------------- -->
+    <section id="project">
+      <!-- this section has three columns grid -->
+      <div class="container">
+        <div class="row g-4">
+          <h1 class="section-title">Dự án</h1>
+          <div class="project-cell col-sm-4">
+            <img src="images/project_1.png" alt="" />
+            <div class="project-cover">
+              <div class="project-name">
+                <p>cv cá nhân</p>
+              </div>
+              <div class="project-overview row">
+                <div
+                  class="project-year overview-icon-text col-sm-4 col-lg-2 col-xl-4"
+                >
+                  <p>2023</p>
+                </div>
+                <div class="overview-icon-text col-sm-8 col-lg-5 col-xl-4">
+                  <i class="icon-user-1"></i>
+                  <p>FUNiX</p>
+                </div>
+                <div class="temp col-sm-4 d-lg-none"></div>
+                <div class="overview-icon-text col-sm-8 col-lg-5 col-xl-4">
+                  <i class="icon-lamp"></i>
+                  <p>Developer</p>
+                </div>
+              </div>
+              <table>
+                <tr>
+                  <th>Mô tả</th>
+                  <td>
+                    Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nhiệm vụ</th>
+                  <td>
+                    - Phát triển code - Review code - Tối ưu code - Xử lý lỗi.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Công nghệ</th>
+                  <td>- HTML, CSS</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- this cell is as same structure as the cell before-->
+          <div class="project-cell col-sm-4">
+            <img src="images/project_2.png" alt="" />
+            <div class="project-cover">
+              <div class="project-name">
+                <p>ứng dụng quản lý sinh viên</p>
+              </div>
+              <div class="project-overview row">
+                <div
+                  class="project-year overview-icon-text col-sm-4 col-lg-2 col-xl-4"
+                >
+                  <p>2023</p>
+                </div>
+                <div class="overview-icon-text col-sm-8 col-lg-5 col-xl-4">
+                  <i class="icon-user-1"></i>
+                  <p>FUNiX</p>
+                </div>
+                <div class="temp col-sm-4 d-lg-none"></div>
+                <div class="overview-icon-text col-sm-8 col-lg-5 col-xl-4">
+                  <i class="icon-lamp"></i>
+                  <p>Developer</p>
+                </div>
+              </div>
+              <table>
+                <tr>
+                  <th>Mô tả</th>
+                  <td>
+                    Ứng dụng quản lý dữ liệu về sinh viên của trường như: thông
+                    tin, điểm số, hạnh kiểm,... Bao gồm các chức năng thêm, sửa,
+                    xóa
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nhiệm vụ</th>
+                  <td>
+                    - Phát triển code - Review code - Tối ưu code - Xử lý lỗi.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Công nghệ</th>
+                  <td>- C#, SQL, .Net</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <!-- this cell is as same structure as the cell before-->
+          <div class="project-cell col-sm-4">
+            <img src="images/project_3.png" alt="" />
+            <div class="project-cover">
+              <div class="project-name">
+                <p>trang web xem tin tức</p>
+              </div>
+              <div class="project-overview row">
+                <div
+                  class="project-year overview-icon-text col-sm-4 col-lg-2 col-xl-4"
+                >
+                  <p>2023</p>
+                </div>
+                <div class="overview-icon-text col-sm-8 col-lg-5 col-xl-4">
+                  <i class="icon-user-1"></i>
+                  <p>FUNiX</p>
+                </div>
+                <div class="temp col-sm-4 d-lg-none"></div>
+                <div class="overview-icon-text col-sm-8 col-lg-5 col-xl-4">
+                  <i class="icon-lamp"></i>
+                  <p>Developer</p>
+                </div>
+              </div>
+              <table>
+                <tr>
+                  <th>Mô tả</th>
+                  <td>
+                    Trang Web xem tin tức nhiều nguồn khác nhau, người dùng có
+                    thể kiếm các tin tức dựa trên các từ khóa.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nhiệm vụ</th>
+                  <td>
+                    - Phát triển code - Review code - Tối ưu code - Xử lý lỗi.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Công nghệ</th>
+                  <td>- HTML, CSS, Javascript</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------- o0o FOOTER o0o ----------------- -->
+    <section id="footer" class="bg-grey">
+      <div class="container">
+        <ul>
+          <li><i class="icon-facebook"></i>Facebook</li>
+          <li><i class="icon-linkedin"></i>Linkedin</li>
+          <!-- the github icon is differnt from others -->
+          <li><i class="icon-github-circled" id="git-icon"></i>Github</li>
+        </ul>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

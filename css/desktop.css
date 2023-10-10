@@ -1,0 +1,102 @@
+@media (max-width: 1400px) {
+  .columns-content p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .columns-content p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .columns-content p {
+    font-size: 10px;
+  }
+  .project-cell,
+  .project-cell p {
+    font-size: 12px;
+  }
+  body p,
+  body span,
+  body a {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  img .right-border-cell {
+    border: none;
+  }
+  #nav-bar a {
+    padding: 14px 7px;
+  }
+  .job-info-cell {
+    padding: 50px 10px;
+  }
+  /* charter */
+  .goals .row > div:nth-child(even) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+  }
+  .scope {
+    grid-row: 2;
+  }
+  .timeline .chart-icon {
+    justify-content: start;
+  }
+  .numbering {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media (min-width: 769px) {
+  img.right-border-cell {
+    border: none;
+  }
+  .columns-content i {
+    height: 48px;
+    width: 48px;
+  }
+  /* charter */
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+  }
+
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .span-1 {
+    grid-column: 1 / span 2;
+  }
+  .row-span {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+  .goals .row > div {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: 992px) {
+  body p,
+  body span,
+  body a,
+  body td,
+  body th,
+  .project-overview i {
+    font-size: 18px;
+  }
+  #job-info h1 {
+    font-size: 28px;
+  }
+  .job-info-cell {
+    padding: 50px 30px;
+  }
+  .columns-content i {
+    height: 50px;
+    width: 50px;
+  }
+}

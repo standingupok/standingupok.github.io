@@ -1,0 +1,51 @@
+@media (max-width: 576px) {
+  body p,
+  body span,
+  body a,
+  body td,
+  body th {
+    font-size: 18px;
+  }
+  .nav-bar-name {
+    display: none;
+  }
+  #nav-bar .row {
+    padding-left: 50px;
+    text-align: left;
+  }
+  .job-info-cell {
+    padding: 10px 10px;
+    height: auto;
+  }
+  .columns-content p {
+    font-size: 16px;
+  }
+  /* .certificate-cell {
+    flex-direction: column;
+  } */
+
+  .certificate-cell:first-child img {
+    border: none;
+  }
+  .project-overview {
+    padding-left: 10px;
+    /* justify-content: start; */
+  }
+  .project-overview p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .project-overview i,
+  .project-overview p {
+    font-size: 18px;
+  }
+  #project {
+    font-size: 18px;
+  }
+  #footer li {
+    font-size: 10px;
+  }
+  #target h1 {
+    font-size: 32px;
+  }
+}
