@@ -13,6 +13,10 @@
     padding-left: 50px;
     text-align: left;
   }
+  .nav-bar-name,
+  #nav-bar a {
+    border-left: 0;
+  }
   .job-info-cell {
     padding: 10px 10px;
     height: auto;
