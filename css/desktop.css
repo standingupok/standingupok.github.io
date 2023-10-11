@@ -2,6 +2,9 @@
   .columns-content p {
     font-size: 14px;
   }
+  .project-overview p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 1200px) {
